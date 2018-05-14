@@ -1,1 +1,11 @@
-# Define a method display_board that prints a 3x3 Tic Tac Toe Board
+$content = Array.new(9, " ")
+
+def create_row(x)
+  pos = (x - 1) * 3
+  spaceContent($content[pos]) + '|' + spaceContent($content[pos + 1]) + '|' + spaceContent($content[pos + 2])
+end
+
+def spaceContent(content)
+  " #{content} "
+end
+
